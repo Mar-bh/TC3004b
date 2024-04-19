@@ -45,8 +45,6 @@ jobs:
           echo "$TNSNAMES_ORA" | base64 -d > oracle/tnsnames.ora
           echo "$TRUSTSTORE_JKS" | base64 -d > oracle/truststore.jks
           ls oracle/
-    
-      - name: Run liquibase
       - uses: liquibase-github-actions/update@v4.27.0
         with:
           changelogFile: "changelog.json"
