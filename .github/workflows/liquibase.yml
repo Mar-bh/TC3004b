@@ -43,7 +43,7 @@ jobs:
           echo $SQLNET_ORA | base64 -d > oracle/sqlnet.ora
           echo $TNSNAMES_ORA | base64 -d > oracle/tnsnames.ora
           echo $TRUSTSTORE_JKS | base64 -d > oracle/truststore.jks
-          ls oracle
-          cat oracle/tnsnames.ora
+          ls oracle/
+    
           
           
